@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ITR Computation Report</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>ITR Computation Report Generator</h1>
+    <p class="subheading">Upload your ITR JSON file to generate a detailed PDF report.</p>
+  </header>
+
+  <main class="container">
+    <div class="upload-section">
+      <label for="jsonFile" class="custom-file-label">Choose JSON File</label>
+      <input type="file" id="jsonFile" accept=".json"/>
+      <button onclick="generatePDF()">Download PDF</button>
+    </div>
+    <div id="report"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TaxTools | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

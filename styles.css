@@ -1,0 +1,193 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f0f2f5, #dce3ea);
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #2e86de, #1b4f72);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.subheading {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* Container */
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 960px;
+  margin: 50px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.01);
+}
+
+/* Upload Section */
+.upload-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.custom-file-label {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1b4f72;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.custom-file-label:hover {
+  background-color: #154360;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+button {
+  padding: 12px 28px;
+  background: #2e86de;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 10px;
+  box-shadow: 0 4px 12px rgba(46, 134, 222, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #1b4f72;
+  transform: translateY(-2px);
+}
+
+/* PDF Report */
+.pdf-report {
+  max-width: 960px;
+  font-size: 15px;
+  padding: 25px;
+  background: #fff;
+  margin: auto;
+  color: #000;
+  break-inside: avoid;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.pdf-report h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  color: #154360;
+}
+
+.pdf-report h4 {
+  margin-top: 25px;
+  color: #2e86de;
+  border-bottom: 2px solid #2e86de33;
+  padding-bottom: 6px;
+}
+
+.pdf-report p {
+  margin: 4px 0;
+  line-height: 1.6;
+}
+
+/* Table Styles */
+.pdf-section h4 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  font-size: 18px;
+  color: #1b4f72;
+  border-bottom: 2px solid #2e86de33;
+}
+
+/* General Table Style */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0 25px;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #eaf2f8;
+  font-weight: 600;
+  color: #1b4f72;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table td:last-child, table th:last-child {
+  text-align: left;
+}
+
+.total-row {
+  font-weight: bold;
+  background-color: #e0f7fa;
+}
+
+.pdf-section {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 14px;
+  background: #f0f2f5;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
